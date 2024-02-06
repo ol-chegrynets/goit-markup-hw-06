@@ -74,11 +74,9 @@ header {
   color: #fff;
 }
 
-.button:hover {
-  color: #404bbf;
-}
+.button:hover,
 .button:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 /* advantages */
