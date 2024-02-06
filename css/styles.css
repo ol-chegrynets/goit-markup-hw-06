@@ -24,7 +24,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #4d5ae5;
 }
 .logo-accent {
   font-family: "Raleway", sans-serif;
@@ -33,7 +33,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 .address {
   font-style: normal;
@@ -43,14 +43,12 @@ header {
   color: #2e2f42;
 }
 
-.nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
 /* .header-link { */
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover {
   color: #404bbf;
 }
 /* main */
@@ -76,7 +74,9 @@ header {
   color: #fff;
 }
 
-.button:hover,
+.button:hover {
+  color: #404bbf;
+}
 .button:focus {
   color: #404bbf;
 }
