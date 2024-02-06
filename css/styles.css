@@ -57,7 +57,7 @@ header {
 .hero {
   background: #2e2f42;
 }
-.header1 {
+.header-hero {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -76,7 +76,8 @@ header {
   color: #fff;
 }
 
-.button:hover .button:focus {
+.button:hover,
+.button:focus {
   color: #404bbf;
 }
 
@@ -112,6 +113,12 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.foto {
+  background-color: #fff;
+}
+.profil {
+  font-size: 16px;
+}
 
 /* portfolio */
 .portfolio {
@@ -135,5 +142,5 @@ portfolio-p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
