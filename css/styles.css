@@ -32,7 +32,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.page-header .container {
+.container {
   display: flex;
 }
 
@@ -69,7 +69,7 @@ img {
   color: #2e2f42;
 }
 
-.menu {
+.menu-hdr {
   display: flex;
   gap: 40px;
 }
@@ -139,18 +139,35 @@ img {
   background: #fff;
   color: #434455;
   font-size: 16px;
+  padding: 120px 0;
 }
 
-.advantages-title {
-  color: #fff;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.h-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.menu-advan {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-advan-item {
+  width: calc((100% - 72px) / 4);
+}
+
+
+
+.advantages-p {
+  margin-bottom: 8px;
 }
 
 /* ============ team ============ */
@@ -159,6 +176,7 @@ img {
   text-transform: capitalize;
   text-align: center;
   color: #434455;
+  padding: 120px 0;
 }
 
 .section-title {
@@ -166,32 +184,81 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.foto {
-  background-color: #fff;
+.menu-team {
+  display: flex;
+  gap: 24px;
 }
+
+.foto-profil {
+  background-color: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.container-profil {
+  padding: 32px 0;
+}
+
+.h-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 
 .profil {
   font-size: 16px;
+  text-align: center;
 }
 
 /* ============ portfolio ============ */
 .portfolio {
   background: #fff;
   text-align: left;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-portfolio-p {
+.menu-portf {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.menu-portf-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.container-portf {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-p {
   color: #434455;
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
 /* ============ footer ============ */
-.footer {
+.page-footer {
   background: #2e2f42;
   color: #f4f4fd;
+  padding: 100px 0
+}
+
+.logo-logo-foot {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
@@ -202,4 +269,5 @@ portfolio-p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  max-width: 264px
 }
