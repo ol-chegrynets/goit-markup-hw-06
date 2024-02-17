@@ -160,7 +160,7 @@ img {
 }
 
 .menu-advan-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 
@@ -183,6 +183,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .menu-team {
@@ -232,6 +233,11 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+
+}
+
+.container-portf>.h-name {
+  text-align: left;
 }
 
 .portfolio-p {
@@ -248,7 +254,7 @@ img {
   padding: 100px 0
 }
 
-.page-footer .logo-foot {
+.logo-foot {
   display: inline-block;
   margin-bottom: 16px;
 }
