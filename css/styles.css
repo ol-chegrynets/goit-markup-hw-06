@@ -285,20 +285,12 @@ img {
   padding: 100px 0
 }
 
-.logo-foot {
-  display: inline-block;
-  margin-bottom: 16px;
-}
+
 
 .logo-footer {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
-  max-width: 264px
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-p {
