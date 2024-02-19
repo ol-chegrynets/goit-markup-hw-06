@@ -23,7 +23,6 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-
 }
 
 a {
@@ -287,13 +286,10 @@ img {
   color: #f4f4fd;
 }
 
-
-
 .footer-p {
   max-width: 264px;
 }
 
-.logo.logo-footer {
-
+.logo-footer {
   margin-bottom: 16px;
 }
