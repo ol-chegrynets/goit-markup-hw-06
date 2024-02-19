@@ -282,17 +282,25 @@ img {
   align-items: flex-start;
 }
 
-
-.logo-footer {
+.footer-accent {
   color: #f4f4fd;
-
 }
 
-.logo-foot {
-  display: inline-block;
-  margin-bottom: 16px;
-}
+
 
 .footer-p {
   max-width: 264px;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
