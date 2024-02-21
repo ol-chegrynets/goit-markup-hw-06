@@ -193,20 +193,14 @@ img {
   flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
-
-
-.advantages-p {
-  margin-bottom: 8px;
-}
-
 /* ============ team ============ */
 .section {
-  background: #f4f4fd;
-  text-transform: capitalize;
   color: #434455;
   padding: 120px 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+}
+
+.team- section {
+  background-color: #f4f4fd;
 }
 
 .section-title {
@@ -239,10 +233,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: center;
   margin-bottom: 8px;
 }
 
+.team-titl {
+  text-align: center;
+}
 
 .profil {
   font-size: 16px;
