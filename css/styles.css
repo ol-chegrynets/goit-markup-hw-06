@@ -112,7 +112,7 @@ img {
   color: #404bbf;
 }
 
-.menu-::after {
+.menu-list-link::after {
   content: "";
   position: absolute;
   left: 0;
