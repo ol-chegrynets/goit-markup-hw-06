@@ -95,11 +95,23 @@ img {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+}
+
+.menu-item::after {
+  content: "";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  bottom: 10px;
+  right: 10px;
+  z-index: 500;
 }
 
 .address {
@@ -110,6 +122,10 @@ img {
 .menu-address {
   display: flex;
   gap: 40px;
+}
+
+.header-link {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -125,7 +141,13 @@ img {
 }
 
 .hero {
+  max-width: 1440px;
   background: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/icons/people-office-min.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
 }
 
@@ -156,6 +178,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -163,7 +186,7 @@ img {
   background-color: #404bbf;
 }
 
-/* advantages */
+/* ================================advantages=============================== */
 .advantages {
   background: #fff;
   color: #434455;
@@ -184,13 +207,26 @@ img {
   overflow: hidden;
 }
 
+.advan-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+}
+
 .menu-advan {
   display: flex;
   gap: 24px;
 }
 
 .menu-advan-item {
-  flex-basis: calc((100% - 3 * 24px) / 4)
+  flex-basis: calc((100% - 3 * 24px) / 4);
+
 }
 
 /* ============ team ============ */
@@ -221,10 +257,13 @@ img {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
 }
 
+
 .container-profil {
-  padding: 32px 0;
+  padding: 32px 16px;
+
 }
 
 .h-name {
@@ -243,7 +282,29 @@ img {
 .profil {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  flex-direction: row;
+}
+
+.social-list-icon {
+  fill: white;
+}
+
 
 /* ============ portfolio ============ */
 .list-portf {
@@ -254,7 +315,15 @@ img {
 }
 
 .list-portf-item {
+
   width: calc((100% - 48px)/3);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-portf-item:hover {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 .container-portf {
@@ -275,21 +344,70 @@ img {
   text-align: left;
 }
 
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.block-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-overlay:hover .block-overlay {
+  transform: translateY(0);
+}
+
 /* ============ footer ============ */
 .page-footer {
   background: #2e2f42;
   color: #f4f4fd;
   padding: 100px 0;
+
+}
+
+.footer-page-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-text {
+  width: 264px;
+  margin-right: 120px;
 }
 
 .footer-accent {
   color: #f4f4fd;
 }
 
-.footer-p {
-  max-width: 264px;
-}
+
 
 .logo-footer {
   margin-bottom: 16px;
+}
+
+.footer-social {
+  width: 208px;
+  height: 80px;
+}
+
+.footer-title-social {
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social .social-list-link:hover {
+  background-color: #31d0aa;
+
 }
