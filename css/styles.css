@@ -40,7 +40,7 @@ img {
   max-width: 100%;
 }
 
-/* ============ heder ============ */
+/* ============ header ============ */
 .page-header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -322,7 +322,9 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover .social-list-link:focus {
+
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: #404bbf
 }
 
@@ -392,7 +394,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-portf-item:hover .block-overlay {
+.list-portf-item:hover .text-overlay {
   transform: translateY(0%);
 }
 
@@ -445,6 +447,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon:hover .footer-icon:focus {
+.footer-icon:hover,
+.footer-icon:focus {
   background-color: #31d0aa;
 }
