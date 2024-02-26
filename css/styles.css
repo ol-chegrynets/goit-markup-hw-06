@@ -101,7 +101,6 @@ img {
   position: relative;
   color: #404bbf;
   font-weight: 500;
-  color: #2e2f42;
   padding: 24px 0;
   display: block;
 
@@ -112,7 +111,7 @@ img {
   color: #404bbf;
 }
 
-.menu-list-link::after {
+.menu-link::after {
   content: "";
   position: absolute;
   left: 0;
