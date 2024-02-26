@@ -103,6 +103,7 @@ img {
   font-weight: 500;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -123,7 +124,6 @@ img {
   bottom: 10px;
   right: 10px;
   z-index: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
