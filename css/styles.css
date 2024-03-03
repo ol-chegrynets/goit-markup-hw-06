@@ -608,7 +608,7 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .div-send-user {
@@ -622,6 +622,7 @@ input {
   height: 40px;
   background-color: transparent;
   padding-left: 38px;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -631,6 +632,7 @@ input {
   top: 50%;
   transform: translateY(-50%);
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-rows:focus {
@@ -642,6 +644,10 @@ input {
   fill: #4d5ae5;
 }
 
+.div-textarea-label {
+  margin-bottom: 16px;
+}
+
 .input-comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -650,8 +656,9 @@ input {
   padding: 8px 16px;
   background-color: transparent;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   resize: none;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -664,6 +671,10 @@ input {
 
 .input-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
+}
+
+.div-checkbox-label {
+  margin-bottom: 24px;
 }
 
 .input-checkbox {
@@ -694,6 +705,10 @@ input {
   fill: transparent;
   margin-right: 8px;
   margin-top: 8px;
+}
+
+.send-checkbox-icon {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy {
