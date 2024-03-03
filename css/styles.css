@@ -500,17 +500,17 @@ input {
   align-items: center;
   border: none;
   border-radius: 4px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   padding: 8px 24px;
-  max-width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   color: #fff;
   cursor: pointer;
-  gap: 16px;
 }
 
 .button-subscr:hover,
@@ -518,6 +518,9 @@ input {
   background-color: #404bbf;
 }
 
+.social-list-icon {
+  margin-left: 16px;
+}
 
 /* ====================backdrop=================== */
 .backdrop {
