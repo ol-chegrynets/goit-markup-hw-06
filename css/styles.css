@@ -684,8 +684,8 @@ input {
 
 .input-checkbox:checked+.privacy-policy .input-checkbox-span {
   background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
+  border: none;
 }
 
 .input-checkbox:focus+.privacy-policy .input-checkbox-span {
@@ -710,7 +710,7 @@ input {
 
 .send-checkbox-icon {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
+
 }
 
 .privacy-policy {
