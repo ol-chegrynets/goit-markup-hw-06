@@ -686,7 +686,7 @@ input {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  border: none;
+
 }
 
 .input-checkbox:focus+.privacy-policy .input-checkbox-span {
