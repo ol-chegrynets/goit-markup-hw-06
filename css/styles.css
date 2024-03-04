@@ -591,7 +591,6 @@ input {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 
@@ -689,10 +688,10 @@ input {
 
 }
 
-.input-checkbox:focus+.privacy-policy .input-checkbox-span {
+/* .input-checkbox:focus+.privacy-policy .input-checkbox-span {
   border: 2px solid #000;
   border-radius: 4px;
-}
+} */
 
 .input-checkbox-span {
   display: inline-flex;
