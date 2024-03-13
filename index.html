@@ -20,8 +20,8 @@
     <header class="page-header">
         <div class="container header-div">
             <nav class="page-nav">
-                <a href="index.html" class="logo">web<span class="logo-accent">Studio</span></a>
-                <ul class="menu-hdr">
+                <a href="index.html" class="logo">web<span class="accent-color">Studio</span></a>
+                <ul class="menu">
                     <li class="menu-item">
                         <a class="menu-link current" href="./index.html">Studio</a>
                     </li>
@@ -33,28 +33,34 @@
                     </li>
                 </ul>
             </nav>
-            <address class="address">
-                <ul class="menu-address">
-                    <li class="header-list-link">
-                        <a href="mailto:info@devstudio.com" class="header-link">info@devstudio.com</a>
+            <address class="page-address">
+                <ul class="address">
+                    <li class="address-item">
+                        <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
                     </li>
-                    <li class="header-list-link">
-                        <a href="tel:+110001111111" class="header-link">+11 (000) 111-11-11</a>
+                    <li class="address-item">
+                        <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button class="menu-open-btn" type="button" data-modal-open>
+                <svg class="menu-open-btn-icon" width="17" height="15" area-label="mobile menu open icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
+    <!-- ========================================Hero================================================ -->
     <main>
         <section class="hero">
             <div class="container div-flex">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button class="button" data-modal-open type="button">Order Service</button>
             </div>
         </section>
         <!-- ===========================advantages=============================== -->
-        <section class="advantages section div-flex">
+        <!-- <section class="advantages section div-flex">
             <div class="container">
                 <h2 class="visually-hidden">Page advantages</h2>
                 <ul class="menu-advan">
@@ -100,9 +106,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- ===========================our team================================ -->
-        <section class="section team-section">
+        <!-- <section class="section team-section">
             <div class="container div-flex">
                 <h2 class="section-title">Our Team</h2>
                 <ul class="menu-team">
@@ -260,9 +266,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--========================== portfolio=============================== -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container div-flex">
                 <h2 class="section-title">Our Portfolio</h2>
                 <ul class="list-portf">
@@ -342,10 +348,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-
-    <footer class="page-footer">
+    <!-- =================================================Footer===================================== -->
+    <!-- <footer class="page-footer">
         <div class="container footer-page-container">
             <div class="footer-logo-text">
                 <a href="index.html" class="logo logo-footer">web<span class="footer-accent">Studio</span></a>
@@ -401,12 +407,12 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- ==============================================backdrop========================================== -->
-    <div class="backdrop is-o pen">
+    <!-- <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-clouse-btn">
-                <svg class="modal-clouse-icon" width="8" height="8" aria-label="close-black icon">
+            <button type="button" class="modal-clouse-btn" data-modal-close>
+                <svg class="modal-clouse-icon" width="8" height="8" aria-label="close modalicon">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
@@ -462,7 +468,68 @@
                 <button class="send-btn" type="submit">Send</button>
             </form>
         </div>
+    </div> -->
+    <!-- <div class="mobile-menu is-hidden" data-modal>
+        <div class="container mobile-menu-container">
+            <button class="mobile-clouse-btn" type="button" data-modal-close>
+                <svg class="mobile-menu-clouse-icon" width="8" height="8" aria-label="mobile menu close icon">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="menu-mobile-list">
+                <li class="menu-item">
+                    <a class="menu-link" href="./index.html">Studio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Contacts</a>
+                </li>
+            </ul>
+            <div class="mobile-links">
+                <ul class="address-mobile">
+                    <li class="address-item">
+                        <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
+                    </li>
+                    <li class="address-item">
+                        <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" width="16" height="16" aria-label="instagram icon">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" width="16" height="16" aria-label="twitter icon">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" width="16" height="16" aria-label="facebook icon">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" width="16" height="16" aria-label="linkedin icon">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
