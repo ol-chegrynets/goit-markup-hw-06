@@ -374,11 +374,356 @@ body {
 /* ================================ /Header  styles============================= */
 
 /* ================================ HERO  styles============================= */
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    max-width: 320px;
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/bg/Dark-bg-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 72px 52px;
+
+}
+
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-mob@2x.jpg);
+    }
+}
+
+.hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    background-color: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #fff;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button:hover,
+.button:focus {
+    background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        min-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-tab.jpg)
+    }
+
+    @media only screen and (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-tab@2x.jpg)
+        }
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero {
+        min-width: 1158px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-desk.jpg);
+    }
 
 
-
-
-
-
+    @media only screen and (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-desk@2x.jpg)
+        }
+    }
+}
 
 /* ================================ /HERO  styles============================= */
+
+/* ================================ Adventages  styles============================= */
+@media only screen and (max-width: 1157px) {
+    .advan-icon {
+        display: none;
+    }
+}
+
+.section {
+    background: #fff;
+    color: #434455;
+    padding: 96px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.menu-advan {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.h-name {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.advantages-p {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-advan {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .menu-advan-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+
+@media only screen and (min-width: 1158px) {
+    .menu-advan-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+
+    .advantages {
+        padding: 120px 0;
+    }
+
+    .advan-icon {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background-color: #f4f4fd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;
+    }
+
+    .h-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .advantages-p {
+        font-weight: 400;
+    }
+}
+
+/* ================================ /Adventages  styles============================= */
+
+/* ================================ Team  styles============================= */
+.team-section {
+    color: #434455;
+    padding: 96px 28px;
+    background-color: #f4f4fd;
+}
+
+.menu-team {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.foto-profil {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+.container-profil {
+    max-width: 232px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 32px 16px;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.profil {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .team-section {
+        padding-right: 110px;
+        padding-left: 110px;
+    }
+
+    .menu-team {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    .foto-profil {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .team-section {
+        padding: 120px 0;
+    }
+
+    .foto-profil {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+}
+
+/* ================================ /Team  styles============================= */
+
+/* ================================ Portfolio styles============================= */
+.list-portf {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+
+
+.list-portf-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.container-portf {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
+}
+
+.container-portf>.h-name {
+    text-align: left;
+}
+
+.portfolio-p {
+    color: #434455;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.portfolio-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    left: 0;
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: #f4f4fd;
+
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-portf-item:hover .text-overlay {
+    transform: translateY(0%);
+}
+
+@media only screen and (min-width: 768px) {
+    .list-portf {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .list-portf-item {
+        width: calc((100% - 24px)/2);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .list-portf-item {
+
+        width: calc((100% - 48px)/3);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* ================================ /Portfolio  styles============================= */
