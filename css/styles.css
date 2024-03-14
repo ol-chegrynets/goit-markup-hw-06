@@ -134,7 +134,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         max-width: 320px;
-        height: 640px;
+        max-height: 623px;
         padding-top: 72px;
         padding-right: 24px;
         padding-bottom: 40px;
