@@ -305,8 +305,6 @@ body {
         display: none;
     }
 
-
-
     .header-div {
         flex-direction: row;
 
@@ -316,7 +314,6 @@ body {
         display: flex;
         align-items: center;
     }
-
 
     .menu {
         display: flex;
@@ -330,8 +327,11 @@ body {
         padding: 24px 0;
     }
 
+    .logo {
+        margin-right: 76px;
+    }
+
     .page-address {
-        margin-left: auto;
         font-style: normal;
     }
 
