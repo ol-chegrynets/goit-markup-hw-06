@@ -39,7 +39,7 @@ input {
 }
 
 .container {
-    max-width: 288px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,7 +47,8 @@ input {
 @media only screen and (min-width: 768px) {
 
     .container {
-        max-width: 736px;
+        max-width: 768px;
+        padding: 0 16px;
     }
 }
 
@@ -100,10 +101,6 @@ body {
         display: none;
     }
 
-    .page-header {
-        margin: 16px 0;
-    }
-
     .menu-open-btn {
         background-color: transparent;
         border: none;
@@ -134,7 +131,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         max-width: 320px;
-        max-height: 623px;
+        height: 100%;
         padding-top: 72px;
         padding-right: 24px;
         padding-bottom: 40px;
@@ -215,6 +212,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding: 17px 0;
     color: #4d5ae5;
 }
 
@@ -236,7 +234,7 @@ body {
 
 .menu-link {
     font-weight: 700;
-    font-style: 36px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     display: block;
@@ -301,6 +299,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
     .menu-open-btn {
         display: none;
     }
@@ -443,6 +445,7 @@ body {
 @media only screen and (min-width: 768px) {
     .hero {
         min-width: 768px;
+        padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-tab.jpg)
     }
 
@@ -465,8 +468,11 @@ body {
 
 @media only screen and (min-width: 1158px) {
     .hero {
-        min-width: 1158px;
+        min-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/Dark-bg-desk.jpg);
+        background-position: 50%;
+        padding: 188px 0;
+
     }
 
 
@@ -543,12 +549,12 @@ body {
 }
 
 @media only screen and (min-width: 1158px) {
-    .menu-advan-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
+    .section {
+        padding: 120px 0;
     }
 
-    .advantages {
-        padding: 120px 0;
+    .menu-advan-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
     }
 
     .advan-icon {
@@ -592,6 +598,9 @@ body {
 }
 
 .foto-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fff;
     width: 100%;
     border-radius: 0px 0px 4px 4px;
@@ -773,6 +782,10 @@ body {
     color: #f4f4fd;
 }
 
+.footer-text {
+    line-height: 1.5;
+}
+
 .logo-footer {
     margin-bottom: 16px;
     text-align: center;
@@ -816,6 +829,7 @@ body {
 .form-subscribe {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
 }
 
@@ -858,6 +872,10 @@ body {
 .button-subscr:hover,
 .button-subscr:focus {
     background-color: #404bbf;
+}
+
+.social-list-icon {
+    margin-left: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1146,7 +1164,7 @@ body {
 
 @media only screen and (min-width: 1158px) {
     .modal {
-        width: 288px;
+        width: 408px;
     }
 
     .input-rows {
